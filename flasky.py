@@ -9,10 +9,10 @@ from flask import send_from_directory
 
 app = Flask(__name__)
 
-pushid = "ew6ZRa"
-pushpassword = "pushme"
-pushsalt = "fps03c0q"
-local = "http://127.0.0.1:5000"
+pushid = "pushme" ## placeholder data
+pushpassword = "passme" ## placeholder data
+pushsalt = "saltme" ## placeholder data
+local = "http://127.0.0.1:5000" # placeholder data
 
 
 quotes = ['I like my beer cold… my TV loud… and my homosexuals flaming.',
