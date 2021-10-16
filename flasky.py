@@ -34,6 +34,11 @@ def home():
 	title = "Home"
 	return render_template("index.html", data=secrets.choice(quotes), title=title)
 
+
+@app.route('/api')
+def api(METHODS='get'):
+	return secrets.choice(quotes)
+
 @app.route('/stare')
 def stare():
 	title = "Nope"
@@ -57,4 +62,4 @@ def favicon():
 
 
 if __name__ == "__main__":
-	app.run(debug=True)
+	app.run(host="0.0.0.0")
