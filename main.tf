@@ -10,11 +10,9 @@ terraform {
 provider "docker" {
   host = "unix:///var/run/docker.sock" # to use local docker provider
 }
-
-
-
+ 
 resource "docker_container" "simpsonsapi" {
-  image = "af9f8f8eb650" # local image, build a new one and change here
+  image = "simpsonsapi" # local image tag
   name  = "simpsonsapi" # 
 
   ports {
