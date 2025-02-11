@@ -15,6 +15,10 @@ def home():
 	title = "Home"
 	return render_template("index.html", data=secrets.choice(quotes), title=title)
 
+@app.route('/boop')
+def boop():
+	return Response("Beep boop.", mimetype='text/plain')
+
 
 @app.route('/api')
 def api():
@@ -31,7 +35,7 @@ def page_not_found(e):
 
 @app.route('/humans.txt')
 def humans():
-	return Response("Made by Dan.", mimetype='text/plain')
+	return Response("Made by Dan.", mimetype='application/json')
 
 
 
