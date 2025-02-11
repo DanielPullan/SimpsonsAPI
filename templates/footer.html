@@ -10,21 +10,9 @@
 </script>
 
 <script>
-  function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-} 
-</script>
-
-<script>
 fetch('/api')
   .then(response => response.text())
   .then(data => console.log(data));
-
 </script>
 
 </body>
